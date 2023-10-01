@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 300px 150px;
+    grid-gap: 25px;
+    position: relative;
+    padding-left: 40em;
+
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    z-index: auto;
+
+}
+
+
+/* Add margin to the right of the first and second image */
+.image-grid:nth-child(1) {
+    margin-right: 25px;
+}
+
+.image-grid:nth-child(2) {
+    margin-right: 25px;
+}
+
+
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Using different CSS units */
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    /* em unit */
+    border-radius: 3px;
+    border: 1px solid black;
+    width: auto;
+}
+
+input[type="submit"] {
+    padding: 0.5rem 2rem;
+    /* rem unit */
+    font-size: 16px;
+    /* px unit */
+    width: auto;
+    background-color: #0099cc;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0077a3;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 480px) and (max-width: 1023px) {
+    /* Styles for mobile and tablets */
+}
+
+@media (min-width: 1024px) {
+    /* Styles for desktop */
+}
